@@ -1,0 +1,45 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --grey-color:#5f6764;    
+}
+
+.paddingyb {
+    padding: 25px 0;
+}
+
+.arizto-grey {
+    color: var(--grey-color);
+}
+
+
+/*===== change default modal css ====*/
+.modal-header {
+    border-bottom:0;
+}
+.modal-body {
+    padding:0;
+}
+
+/* S: modal-task  */
+.modal.in .modal-sm {
+    transform: translate(0,30%);
+}
+.modal-sm .modal-content {
+    border-radius: 20px;
+}
+
+.modal-task-title {
+    @apply .text-center .font-bold .mb-8
+}
+
+.modal-task-p {
+    @apply .text-center .arizto-grey .mb-8 .mx-8
+}
+
+.modal-task-btn {
+    @apply .text-center .arizto-grey .paddingyb .border-t .border-grey
+}
+/* E: modal-task  */
